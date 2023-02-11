@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -7,6 +8,7 @@
 
     <!-- Aqui, lik para os ícones -->
     <script src="https://kit.fontawesome.com/aa62610bef.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="icones/favicon_io/favicon-32x32.png" type="image/x-icon">
 
     <link rel="stylesheet" href="style.css">
     <script src="index.js" defer></script>
@@ -16,7 +18,7 @@
     <title>Tempo Aqui Agora</title>
 </head>
 <body>
-        
+  <span id="dataHora"></span>
     <main>
         <!--     <h3>Previsão do tempo atualizada</h3> -->
         <div class="container">
@@ -25,16 +27,17 @@
             <button onclick="buscar()" id="button"><i class="fa-solid fa-magnifying-glass"></i></i></button>
           </div>
           <div class="container-span">
-            <span id="cidadeSpan"><i class="fa-solid fa-location-dot"></i></span>
-            <span id="horarioSpan"></span>
+           
+            <span id="cidadeSpan"><img id="localIcone" src="icones/pin-de-localizacao.png"></span>
+            
 
 
 
-
-            <span id="temperatura"><i class="fa-solid fa-temperature-three-quarters"></i></span>
+            <p>Tempo Agora</p>
+            <span id="temperatura"><img id="termIcone" src="icones/termometro.png"></span>
             <div id="content-span">
-              <span id="imgSpan"></span>
-              <span id="ceu"><i class="fa-solid fa-cloud-moon"></i></span>
+              <span id="imgSpan"><img id="img02" src="http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" alt=""></span>
+              <span id="ceu"><img id="nuvIcone" src="icones/nuvem.png"></span>
             </div>
           </div>
     
