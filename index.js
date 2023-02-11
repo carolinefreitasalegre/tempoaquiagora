@@ -69,6 +69,21 @@ function dateBuilder(data) {
   let year = data.getFullYear();
   let hours = data.getHours()
   let min = data.getMinutes()
+  
+  
+  
+  if (hours < 12) {
+    document.body.style.backgroundImage = 'url(img/manhã.jpg)';
+  }
+  else if (hours < 15){
+    document.body.style.backgroundImage = 'url(img/tarde.jpg)';
+  }
+  else {
+    document.body.style.backgroundImage = 'url(img/noite.jpg)';
+  }
+ 
+
+  
   return `${day}, ${date} ${month} ${year}. Às ${hours}h:${min}min`;
   
 }
