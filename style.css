@@ -16,6 +16,10 @@
     margin-top: -12%;
     font-size: 1.5em;
     animation: animate 1.5s linear infinite;
+    background-color: rgba(0, 0, 0, 0.947);
+    border: 2px solid rgba(0, 0, 0, 0.793);
+    border-radius: 5px;
+    padding: 10px;
   }
   @keyframes animate{
     0%{
