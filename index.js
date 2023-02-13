@@ -14,7 +14,7 @@ function buscar() {
   getDataApi()
 }
 // adicionado o evento de clik
-input.addEventListener('keyup', (e)  => {
+input.addEventListener('keydown', (e)  => {
   if (e.code === "Enter") {
     const cidadeSpan = e.target.value
     getDataApi(cidadeSpan)
