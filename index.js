@@ -14,14 +14,17 @@ function buscar() {
   getDataApi()
 }
 // adicionado o evento de clik
-input.addEventListener('keydown', (e)  => {
-  if (e.code === "Enter") {
-    const cidadeSpan = e.target.value
-    getDataApi(cidadeSpan)
 
-  }
-})
+
+document.addEventListener("keypress", function(e) {
+  if(e.key === 'Enter') {
   
+      var btn = document.getElementById('button');
+    
+    btn.click();
+  
+  }
+});
   
   
 async function getDataApi() {
